@@ -17,6 +17,9 @@ let fcon = (fun, ctx) => {
     };
 };
 
+/**
+ * TODO check conf format
+ */
 let control = (fc, conf) => {
     return function () {
         let args = Array.prototype.slice.call(arguments);
