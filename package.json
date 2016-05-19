@@ -1,0 +1,31 @@
+{
+  "name": "fcon",
+  "version": "0.0.1",
+  "description": "Control function at variable & function & expression & statement etc level",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoveKino/fcon.git"
+  },
+  "keywords": [
+    "function",
+    "rollback",
+    "ignore",
+    "replace"
+  ],
+  "author": "ddchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoveKino/fcon/issues"
+  },
+  "homepage": "https://github.com/LoveKino/fcon#readme",
+  "dependencies": {
+    "keysmap": "0.0.1"
+  }
+}
