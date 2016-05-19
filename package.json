@@ -27,5 +27,8 @@
   "homepage": "https://github.com/LoveKino/fcon#readme",
   "dependencies": {
     "keysmap": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }
