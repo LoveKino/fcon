@@ -1,13 +1,14 @@
 {
   "name": "fcon",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Control function at variable & function & expression & statement etc level",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/**/*.js",
+    "cover": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,9 @@
     "keysmap": "0.0.1"
   },
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }

@@ -51,6 +51,6 @@ ret.then((v) => {
     let v0P = control(proc, timePointToConf(timeline[0]))();
     let v1P = control(proc, timePointToConf(timeline[1]))();
     Promise.all([v0P, v1P]).then((list) => {
-        console.log(v, list[0], list[1]);
+        console.log(v, list[0], list[1]); // eslint-disable-line
     });
 });

@@ -168,4 +168,21 @@ describe('base', () => {
         fcc();
         assert.deepEqual(rets, [['a', 50], ['b', 52]]);
     });
+
+    it('error name', (done) => {
+        let fc = mark(function () {
+            let s = this.s;
+            let a = s.vari({}, 50);
+            let b = s.exp('b', () => a + 2);
+            return b;
+        });
+
+        try {
+            fc();
+        } catch (err) {
+            if(err.toString().indexOf('Expected type string') !== -1) {
+                done();
+            }
+        }
+    });
 });
